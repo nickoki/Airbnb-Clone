@@ -27,7 +27,6 @@ body {
 
 .img-container {
     display: flex;
-    flex-direction: row;
     margin-bottom: 27px;
     width: 1056px;
     height: 368px;
@@ -79,4 +78,21 @@ h1 {
     background-image: url(../img/sonoma.jpg);
 }
 
-/*TODO @media stack blocks and change flex grow
+/*TODO @media stack blocks and change flex grow */
+
+@media screen and (max-width: 1070px) {
+    .img-container {
+        flex-wrap: wrap;
+        width: 700px;
+        height: auto;
+    }
+
+    .img-container div {
+        width: 302px;
+    }
+
+    .img-container div:first-child {
+        margin-bottom: 12px;
+        width: 676px;
+    }
+}
